@@ -49,4 +49,12 @@ class House
       room.area
     end.reverse
   end
+
+  def rooms_by_category
+    rooms_by_category = Hash.new(0)
+    @rooms.each do |room|
+      rooms_by_category[room.category] = rooms_from_category(room.category)
+    end
+    rooms_by_category
+  end
 end
