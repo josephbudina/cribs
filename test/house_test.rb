@@ -60,4 +60,12 @@ class HouseTest < Minitest::Test
     house.add_room(room_4)
     assert_equal 1900, house.area
   end
+
+  def test_it_can_put_details_into_a_hash
+    house = House.new("$400000", "123 sugar lane")
+
+    expected = {"price" => 400000, "address" => "123 sugar lane"}
+
+    assert_equal expected, house.details
+  end
 end
