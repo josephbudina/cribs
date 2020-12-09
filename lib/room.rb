@@ -5,9 +5,9 @@ class Room
               :is_painted
 
   def initialize(category, length, width)
-    @category = category
-    @length = length
-    @width = width
+    @category   = category
+    @length     = length
+    @width      = width
     @is_painted = false
   end
 

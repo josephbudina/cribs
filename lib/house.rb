@@ -4,9 +4,9 @@ class House
               :rooms
 
   def initialize(price, address)
-    @price = price
+    @price   = price
     @address = address
-    @rooms = []
+    @rooms   = []
   end
 
   def price
@@ -35,7 +35,7 @@ class House
 
   def details
     house_data = {
-      "price" => price,
+      "price"   => price,
       "address" => @address
     }
   end
@@ -53,7 +53,8 @@ class House
   def rooms_by_category
     rooms_by_category = Hash.new(0)
     @rooms.each do |room|
-      rooms_by_category[room.category] = rooms_from_category(room.category)
+      rooms_by_category[room.category] = 
+      rooms_from_category(room.category)
     end
     rooms_by_category
   end
