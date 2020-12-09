@@ -32,4 +32,11 @@ class House
       room.area
     end
   end
+
+  def details
+    house_data = {
+      "price" => price,
+      "address" => @address
+    }
+  end
 end
