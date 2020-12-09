@@ -21,7 +21,7 @@ class HouseTest < Minitest::Test
     house.add_room(room_1)
     house.add_room(room_2)
 
-    expected = [room1,room2]
+    expected = [room_1,room_2]
 
     assert_equal expected, house.rooms
   end
