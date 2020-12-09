@@ -6,7 +6,7 @@ class Room
 
   def initialize(category, length, width)
     @category = category
-    @length = 10
+    @length = length
     @width = width
     @is_painted = false
   end
